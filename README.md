@@ -1,4 +1,4 @@
-# 🚀 Automated E-Commerce Data Pipeline
+# Automated E-Commerce Data Pipeline
 
 A fully automated data engineering pipeline that extracts product data from a live API, transforms it using Python/Pandas, and loads it into a cloud PostgreSQL database on a scheduled basis.
 
@@ -6,7 +6,7 @@ Built to solve a common business problem: **giving e-commerce teams a clean, que
 
 ---
 
-## 📊 What This Does
+## What This Does
 
 | Step | Tool | Purpose |
 |------|------|---------|
@@ -17,10 +17,7 @@ Built to solve a common business problem: **giving e-commerce teams a clean, que
 
 ---
 
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.10
 - **Data Manipulation:** Pandas
@@ -31,7 +28,7 @@ Built to solve a common business problem: **giving e-commerce teams a clean, que
 
 ---
 
-## 📈 Business Insights Delivered
+## Business Insights Delivered
 
 This pipeline powers SQL views that answer key business questions:
 
@@ -39,11 +36,11 @@ This pipeline powers SQL views that answer key business questions:
 - **Product Health:** Identify underperforming products by rating and review volume.
 - **Executive Summary:** Store-wide averages for price, ratings, and total reviews.
 
-> 💡 *Sample insight from live data: Electronics drives the highest average price and customer engagement, while Jewelery commands a premium price but suffers from the lowest engagement — indicating a potential marketing opportunity.*
+> *Sample insight from live data: Electronics drives the highest average price and customer engagement, while Jewelery commands a premium price but suffers from the lowest engagement — indicating a potential marketing opportunity.*
 
 ---
 
-## ⚙️ How It Runs
+## How It Runs
 
 This pipeline is scheduled via **GitHub Actions** to run automatically every day at 6:00 AM UTC. 
 
@@ -54,14 +51,14 @@ It can also be triggered manually:
 
 ---
 
-## 🔒 Security
+## Security
 
 - Database credentials are stored as **GitHub Secrets** and are never exposed in the codebase.
 - Connection strings are injected at runtime via environment variables.
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Implement **UPSERT** logic to handle duplicate records across daily runs.
 - [ ] Add data quality checks (null counts, outlier detection) before loading.
@@ -72,4 +69,4 @@ It can also be triggered manually:
 
 *Built by Diovu Charles — Data Engineer specializing in automated ETL pipelines and cloud data solutions.*
 
-## 🏗️ Architecture
+## Architecture
